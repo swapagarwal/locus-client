@@ -19,4 +19,11 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="overflow_pending_request">pending request</string>
+    <string name="overflow_show_request">show request</string>
+    <string name="drawer_all_user">ALL USER</string>
+    <string name="drawer_share_location">SHARE LOCATION</string>
+    <string name="drawer_spy_friend">SPY FRIENDS</string>
+    <string name="drawer_profile">Profile</string>
 </resources>
