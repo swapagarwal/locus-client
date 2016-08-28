@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "592900215941",
+    "project_id": "locus-6362a"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592900215941:android:f461ee83b08ebd7e",
+        "android_client_info": {
+          "package_name": "com.justiceleague.locus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn_pGz0oo2Y5WT06cGrtqSTDcmaXuLLlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
