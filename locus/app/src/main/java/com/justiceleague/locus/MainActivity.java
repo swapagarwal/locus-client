@@ -15,11 +15,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 import com.justiceleague.locus.ui.FragmentAllUser;
 import com.justiceleague.locus.ui.FragmentSenders;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private Toolbar toolbar;
 
     private FragmentManager fragmentManager;
     @Override
@@ -77,8 +79,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_request_show) {
+            setToolbarTItle("REQUESTS");
+
+        }
+        else if(id == R.id.action_request_pending){
+            setToolbarTItle("PENDING REQUESTS");
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -90,25 +97,29 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_all_user) {
+            setToolbarTItle("ALL USERS");
             Fragment fragment= new FragmentAllUser();
             fragmentManager.beginTransaction().replace(R.id.container_main,fragment).commitAllowingStateLoss();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_share_location) {
+            setToolbarTItle("Share Location");
             Fragment fragment= new FragmentSenders();
             fragmentManager.beginTransaction().replace(R.id.container_main,fragment).commitAllowingStateLoss();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_spy_friend) {
+            setToolbarTItle("Spy friend");
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_profile) {
+            setToolbarTItle("PROFILE");
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    private void setToolbarTItle(String string){
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(string);
     }
 }
