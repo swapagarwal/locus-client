@@ -19,12 +19,12 @@ public class LoginSignup extends Activity {
     }
 
     public void signIn(View view){
-        Intent i = new Intent(this, LoginSignup.class);
+        Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
     }
 
     public void signUp(View view){
-        Intent intent=new Intent(this, LoginActivity.class);
+        Intent intent=new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 }
