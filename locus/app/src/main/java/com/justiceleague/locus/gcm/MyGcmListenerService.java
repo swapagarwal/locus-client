@@ -68,7 +68,7 @@ public class MyGcmListenerService extends GcmListenerService {
                 PendingIntent.FLAG_ONE_SHOT);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_stat_ic_notification)
+                //.setSmallIcon(com.justiceleague.locus.R.drawable.ic_stat_ic_notification)
                 .setContentTitle("GCM Message")
                 .setContentText(message)
                 .setAutoCancel(true)
