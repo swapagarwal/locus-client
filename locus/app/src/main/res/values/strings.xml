@@ -10,7 +10,7 @@
     <!-- Strings related to login -->
     <string name="prompt_phone">Phone</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Register</string>
+    <string name="action_sign_in">Log In</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -26,4 +26,7 @@
     <string name="drawer_share_location">SHARE LOCATION</string>
     <string name="drawer_spy_friend">SPY FRIENDS</string>
     <string name="drawer_profile">Profile</string>
+    <string name="activity_sign_up_button_text">SIGN UP</string>
+    <string name="activity_sign_up_password_requried">password requried</string>
+    <string name="activity_sign_up_confirm_password">confirm password</string>
 </resources>
