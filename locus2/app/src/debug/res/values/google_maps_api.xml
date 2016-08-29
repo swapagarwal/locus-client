@@ -1,0 +1,19 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=B9:95:5B:68:1E:F6:A6:C1:36:B2:3A:55:39:91:7E:B2:F7:E9:F3:25%3Bcom.justiceleague.locus2
+
+    You can also add your credentials to an existing key, using this line:
+    B9:95:5B:68:1E:F6:A6:C1:36:B2:3A:55:39:91:7E:B2:F7:E9:F3:25;com.justiceleague.locus2
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">AIzaSyA_Zmm-Z059J5VBrObg1XW9DrYvV0FoF60</string>
+</resources>
